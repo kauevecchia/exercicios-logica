@@ -8,6 +8,7 @@ const valorInicial = Number(prompt.question("Você quer que inicie a tabuada em 
 const valorFinal = Number(prompt.question("Você quer que acabe a tabuada em qual número? "))
 
 if(valorFinal < valorInicial) {
+    console.log("Digite o valor final maior que o valor inicial.")
     return 1
 }
 
