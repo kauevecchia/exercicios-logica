@@ -13,7 +13,7 @@ const prompt = require('readline-sync')
 const number = Number(prompt.question("Você quer somar até qual número? "))
 let sum = 0
 
-for(i = 1; i < number; i++) {
+for(i = 1; i <= number; i++) {
     sum += i
 }
 
