@@ -11,13 +11,17 @@ while(nums.length < 5) {
 function bubbleSort(nums) {
     let length = nums.length
     for(let i = 0; i < length; i++) {
-        console.log(nums)
+        let is_sorted = true
         for(let j = 0; j < length - 1; j++) {
             if(nums[j] > nums[j + 1]) {
+                is_sorted = false
                 let aux = nums[j + 1]
                 nums[j + 1] = nums[j]
                 nums[j] = aux
         }
+        if(is_sorted) {
+            return nums
+        } 
     }
 }
             
